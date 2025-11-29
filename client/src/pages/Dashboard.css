@@ -1,0 +1,47 @@
+
+.MyBtn{
+    transition: 1s ease-in-out;
+    background-color: darkmagenta;
+    color:white;
+}
+.MyBtn:hover{
+    color: white;   
+    transform: scale(1.05);
+    border-radius: 8px;
+    background-color: darkmagenta;
+    
+}
+.card-hover{
+     color: white;
+    background-color: darkmagenta;
+    border-radius: 10px;
+    box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.6);
+    transition:0.5s ease-in-out
+}
+.card-hover:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #833ab4;
+    border-radius: 10px;
+    box-shadow: 5px 7px 9px rgba(20, 8, 8, 0.9);
+    cursor: pointer;
+}
+.carousel-indicators [data-bs-target] {
+  margin:10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.1s;
+}
+
+.carousel-indicators .active {
+  background-color: darkmagenta;
+  width: 14px;
+  height: 14px;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: white;
+  transform: scale(1.3);
+}
