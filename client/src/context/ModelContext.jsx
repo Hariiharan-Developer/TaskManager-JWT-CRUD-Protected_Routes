@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import api from "../API/api";
+import { api } from "../API/api";
 
 export const ModelContext = createContext()
 
