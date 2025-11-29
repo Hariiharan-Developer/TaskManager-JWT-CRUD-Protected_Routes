@@ -7,7 +7,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { ModelContext } from "../context/ModelContext";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
-import { api } from "../API/api";
+import { api } from "../axios/axiosInterceptor";
 
 const MyCreation = () => {
   const { task, setTask, getTask, loading, name } =

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import { ModelContext } from "../context/ModelContext";
 import {toast} from 'react-toastify'
-import { api } from "../API/api";
+import { api } from "../axios/axiosInterceptor";
 const CreateTask =()=>{
   const {show,setShow,handleClose,getTask,setTask} = useContext(ModelContext)
   const [post,setPost] = useState({

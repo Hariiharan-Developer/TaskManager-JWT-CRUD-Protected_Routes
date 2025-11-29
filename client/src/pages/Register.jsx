@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import { FaPaperPlane } from "react-icons/fa";
 import{toast} from'react-toastify'
 import { useNavigate } from "react-router-dom";
-import { api } from "../API/api";
+import { api } from "../axios/axiosInterceptor";
 
 //onsubmit :
 

@@ -1,5 +1,4 @@
 import { FaTasks } from 'react-icons/fa'
-import api from '../API/api'
 import { useEffect, useState } from 'react'
 
 const Carousel =()=>{

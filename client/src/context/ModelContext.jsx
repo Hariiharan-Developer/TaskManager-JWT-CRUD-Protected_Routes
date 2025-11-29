@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { api } from "../API/api";
+import { api } from "../axios/axiosInterceptor";
 
 export const ModelContext = createContext()
 
