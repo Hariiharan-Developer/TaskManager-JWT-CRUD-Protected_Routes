@@ -38,7 +38,7 @@ const MyCreation = () => {
   // Delete Task
   const handleDelete = async (data) => {
     try {
-      await api.delete(`/task/${data._id}`);
+     const res = await api.delete(`/task/${data._id}`);
 
       const deletedList = task.filter((t) => t._id !== data._id);
       setTask(deletedList);

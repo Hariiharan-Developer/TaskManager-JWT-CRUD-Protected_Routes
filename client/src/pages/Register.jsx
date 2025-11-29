@@ -149,8 +149,8 @@ const Register = () => {
               onBlur={handleBlur}
               placeholder="Enter Mobile number"
             />
-            {errors.password && touched.password && (
-              <div className="invalid-feedback">{errors.password}</div>
+            {errors.phone && touched.phone && (
+              <div className="invalid-feedback">{errors.phone}</div>
             )}
           </div>
 
