@@ -8,7 +8,11 @@ const cors = require('cors')
 
 const app = express()
 //CORS :
-app.use(cors())
+app.use(cors({
+    origin:['http://localhoste:5173', 'https://taskmanager-jwt-crud-protected-routes-1.onrender.com'],
+    methods:['GET','POST','PUT','DELETE'],
+    credentials:true
+}))
 //DATABASE CALLBACK:
 connectDB()
 
