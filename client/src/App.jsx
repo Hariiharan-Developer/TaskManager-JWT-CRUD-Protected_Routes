@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { ModelProvider } from './context/ModelContext'
 import CreateTask from './pages/CreateTask'
 import MyCreation from './pages/MyCreation'
-import { Protect } from './Protect/Protect'
+import { ProtectedRoute } from './Protect/ProtectedRoute'
 
 
 const App = () => {
@@ -24,14 +24,14 @@ const App = () => {
         <Route path='/Register' element={<Register/>}/>
         
         <Route path='/mycreation' element={
-          <Protect>
+          <ProtectedRoute>
           <MyCreation/>
-          </Protect>
+          </ProtectedRoute>
           }/>
         <Route path='/' element={
-          <Protect>
+          <ProtectedRoute>
           <Dashboard/>
-          </Protect>
+          </ProtectedRoute>
           }/>
         
       </Routes>
