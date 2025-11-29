@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import api from "../API/api";
 import {
   FaWindowClose,
   FaDotCircle
@@ -8,6 +7,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { ModelContext } from "../context/ModelContext";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
+import { api } from "../API/api";
 
 const MyCreation = () => {
   const { task, setTask, getTask, loading, name } =

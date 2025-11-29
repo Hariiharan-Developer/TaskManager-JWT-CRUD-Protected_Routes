@@ -4,9 +4,9 @@ import { loginSchema, registerSchema } from "../schema/schemaValidation";
 import "./Register.css";
 import{FaPaperPlane}from'react-icons/fa'
 import {Link} from 'react-router-dom'
-import api from '../API/api'
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { api } from "../API/api";
 const Login = () => {
     const navigate =useNavigate()
     const onSubmit =async(value,action)=>{

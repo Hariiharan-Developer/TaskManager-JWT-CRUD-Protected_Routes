@@ -4,9 +4,9 @@ import { registerSchema } from "../schema/schemaValidation";
 import "./Register.css";
 import {Link} from 'react-router-dom'
 import { FaPaperPlane } from "react-icons/fa";
-import api  from "../API/api";
 import{toast} from'react-toastify'
 import { useNavigate } from "react-router-dom";
+import { api } from "../API/api";
 
 //onsubmit :
 
